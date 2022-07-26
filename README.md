@@ -1,4 +1,4 @@
-# ooarai
+# Project
 Ooarai Girls' Academy Project
 2022-07-26
 ```
