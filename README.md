@@ -25,10 +25,9 @@ About web serve, All server used Tengine, A kind of third party `NGINX`.
 Included a Weather API to Observatory Oarai, Ibaraki, Japan. API by qWeather.
 
 ### Futrue
-Do not use WordPress or else CMS, font-end rear-end detach. static page.
+Do not use WordPress or else CMS, font-end rear-end detach. It will be static page.
 - html
 - css
 - js
 - vue
 
-Include redesign UI
