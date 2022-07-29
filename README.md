@@ -30,4 +30,4 @@ Do not use WordPress or else CMS, font-end rear-end detach. It will be static pa
 - css
 - js
 - vue
-
+Redesign UI and add animations.
