@@ -1,0 +1,57 @@
+{
+  "inbounds": [
+    {
+      "port": 2333,
+      "listen":"127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "decryption": "none",
+        "clients": [
+          {
+            "id": "50ee2cf3-acd8-4f0b-8b02-1cb1f514edfb",
+            "level": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+        "path": "/"
+        }
+      }
+    }
+  ],
+  "outbounds":  [
+        {
+            "tag": "IPV4_out",
+            "protocol": "freedom",
+            "settings": {
+                "domainStrategy": "UseIPv4"
+            }
+        },
+        {
+            "tag": "IPV6_out",
+            "protocol": "freedom",
+            "settings": {
+                "domainStrategy": "UseIPv6"
+            }
+        }
+    ],
+    "routing": {
+        "rules": [
+            {
+                "type": "field",
+                "outboundTag": "IPV6_out",
+                "domain": [
+                    "domain:aaaaaaaaaaa.com"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "IPV4_out",
+                "network": "udp,tcp"
+            }
+        ]
+}
+}
+
